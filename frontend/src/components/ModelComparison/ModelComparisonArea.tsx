@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useApp } from '../../context/AppContext';
+import { RichMathText } from '../MathFormula';
 import {
   ResponsiveContainer,
   BarChart,
@@ -554,7 +555,7 @@ export const ModelComparisonArea: React.FC = () => {
           </div>
           <ul className="space-y-1 pl-5 list-disc text-slate-600">
             {comparative_analysis.scientific_notes.map((note, idx) => (
-              <li key={idx}>{note}</li>
+              <li key={idx}><RichMathText text={note} /></li>
             ))}
           </ul>
         </div>

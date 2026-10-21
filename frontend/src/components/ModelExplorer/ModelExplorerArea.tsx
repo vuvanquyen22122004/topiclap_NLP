@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useApp } from '../../context/AppContext';
+import { RichMathText } from '../MathFormula';
 import { 
   ResponsiveContainer, 
   BarChart, 
@@ -57,7 +58,7 @@ export const ModelExplorerArea: React.FC = () => {
       metricLabel: 'Hệ số SVD (Tọa độ trực giao)',
       unit: '',
       intuition: 'Chiếu ma trận TF-IDF vào không gian con trực giao 10 chiều bằng SVD. Gom các từ đồng nghĩa vào cùng trục ngữ nghĩa tiềm ẩn.',
-      principle: 'A ≈ U_k Σ_k V_kᵀ (Phân rã giá trị kỳ dị rút gọn). Giữ lại 10 giá trị kỳ dị lớn nhất.',
+      principle: '$A \\approx U_k \\Sigma_k V_k^T$ (Phân rã giá trị kỳ dị rút gọn). Giữ lại 10 giá trị kỳ dị lớn nhất.',
       caveat: 'Hệ số có thể âm hoặc dương mang ý nghĩa phương hướng đại số. KHÔNG PHẢI xác suất.',
       inputDesc: 'TF-IDF (10,000 đặc trưng, min_df=5, max_df=0.9)'
     },
@@ -70,7 +71,7 @@ export const ModelExplorerArea: React.FC = () => {
       metricLabel: 'Xác suất từ (%)',
       unit: '%',
       intuition: 'Mô hình sinh xác suất giả định mỗi tài liệu là một hỗn hợp các chủ đề theo phân phối Dirichlet ba cấp độ.',
-      principle: 'θ_d ~ Dirichlet(α), φ_k ~ Dirichlet(β). Suy luận biến phân (Variational Inference) ước lượng phân phối hậu nghiệm.',
+      principle: '$\\theta_d \\sim \\text{Dirichlet}(\\alpha), \\; \\phi_k \\sim \\text{Dirichlet}(\\beta)$. Suy luận biến phân (Variational Inference) ước lượng phân phối hậu nghiệm.',
       caveat: 'Đầu ra là phân phối xác suất hợp thức (tổng = 100%). Nhạy cảm với tham số α, β và tốn nhiều thời gian huấn luyện nhất.',
       inputDesc: 'Bag-of-Words / CountVectorizer (Đếm tần suất nguyên, min_df=1)'
     },
@@ -82,8 +83,8 @@ export const ModelExplorerArea: React.FC = () => {
       badgeBg: 'bg-amber-100 text-amber-800 border-amber-300',
       metricLabel: 'Trọng số ma trận H (≥ 0)',
       unit: '',
-      intuition: 'Phân rã ma trận không âm V ≈ WH, W ≥ 0, H ≥ 0. Ràng buộc phi âm buộc mô hình học các thành phần ngữ nghĩa cộng dồn (parts-based).',
-      principle: 'min_{W≥0, H≥0} 1/2 ||V - WH||_F² với khởi tạo NNDSVDa và thuật toán Coordinate Descent.',
+      intuition: 'Phân rã ma trận không âm $V \\approx WH$ ($W \\ge 0, H \\ge 0$). Ràng buộc phi âm buộc mô hình học các thành phần ngữ nghĩa cộng dồn (parts-based).',
+      principle: '$\\min_{W \\ge 0, \\, H \\ge 0} \\frac{1}{2} \\|V - WH\\|_F^2$ với khởi tạo NNDSVDa và thuật toán Coordinate Descent.',
       caveat: 'Hệ số thuần dương với độ thưa 54.7%, triệt tiêu hoàn toàn nhiễu âm. Trọng số gốc cần chuẩn hóa L1 nếu muốn tính tỷ lệ.',
       inputDesc: 'TF-IDF (10,000 đặc trưng, min_df=5, max_df=0.9)'
     }
@@ -135,7 +136,7 @@ export const ModelExplorerArea: React.FC = () => {
               </span>
               <h2 className="text-lg font-bold text-slate-900">{tabConfig.name}</h2>
             </div>
-            <p className="text-xs text-slate-500 mt-1">{tabConfig.intuition}</p>
+            <p className="text-xs text-slate-500 mt-1"><RichMathText text={tabConfig.intuition} /></p>
           </div>
 
           <div className="text-xs bg-slate-50 p-2.5 rounded-xl border border-slate-200 shrink-0">
@@ -147,7 +148,9 @@ export const ModelExplorerArea: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
           <div className="p-3 bg-slate-50 rounded-xl border border-slate-200 space-y-1">
             <strong className="text-slate-700">Nguyên lý toán học:</strong>
-            <p className="text-slate-600 font-mono text-[11px]">{tabConfig.principle}</p>
+            <div className="text-slate-700 text-xs py-0.5">
+              <RichMathText text={tabConfig.principle} />
+            </div>
           </div>
           <div className="p-3 bg-amber-50/70 rounded-xl border border-amber-200 space-y-1">
             <strong className="text-amber-800 flex items-center gap-1">

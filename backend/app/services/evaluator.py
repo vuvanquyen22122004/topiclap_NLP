@@ -99,20 +99,20 @@ def get_evaluation_data() -> EvaluationResponse:
     }
 
     metric_definitions = {
-        "Coherence c_v": "Độ mạch lạc ngữ nghĩa của top 10 từ trong mỗi chủ đề dựa trên đồng xuất hiện ngữ cảnh (sliding window). Điểm từ 0 đến 1; càng cao thì các từ trong cùng chủ đề càng gắn kết ngữ nghĩa tự nhiên đối với con người.",
+        "Coherence $c_v$": "Độ mạch lạc ngữ nghĩa của top 10 từ trong mỗi chủ đề dựa trên đồng xuất hiện ngữ cảnh (sliding window). Điểm từ 0 đến 1; càng cao thì các từ trong cùng chủ đề càng gắn kết ngữ nghĩa tự nhiên đối với con người.",
         "Topic Diversity": "Tỷ lệ từ duy nhất trong tập hợp top-k từ của tất cả các chủ đề. Giá trị gần 1 nghĩa là các chủ đề không bị trùng lặp từ khóa lẫn nhau, có ranh giới phân biệt cao.",
         "Avg Jaccard": "Độ tương đồng Jaccard trung bình giữa các cặp chủ đề. Càng thấp (tiến về 0) chứng tỏ các chủ đề càng phân tách độc lập và ít chồng chéo nội dung.",
-        "Sai số tái tạo": "Khoảng cách Frobenius ||X - WH||_F giữa ma trận gốc và ma trận tích tái tạo. Chỉ có ý nghĩa so sánh trực tiếp giữa LSI và NMF trên cùng ma trận TF-IDF.",
-        "% Âm trong H": "Tỷ lệ các phần tử có giá trị âm trong ma trận thành phần chủ đề H. NMF và LDA đạt đúng 0%, trong khi LSI có 47.5% giá trị âm do tính chất trực giao của phân rã SVD.",
-        "% Bằng 0 trong H (Sparsity)": "Độ thưa của ma trận chủ đề. NMF đạt độ thưa vượt trội 54.7%, nghĩa là mỗi chủ đề chỉ tập trung vào một tập từ vựng hữu hạn, loại bỏ nhiễu hiệu quả.",
+        "Sai số tái tạo": "Khoảng cách Frobenius $\\|X - WH\\|_F$ giữa ma trận gốc và ma trận tích tái tạo. Chỉ có ý nghĩa so sánh trực tiếp giữa LSI và NMF trên cùng ma trận TF-IDF.",
+        "% Âm trong $H$": "Tỷ lệ các phần tử có giá trị âm trong ma trận thành phần chủ đề $H$. NMF và LDA đạt đúng 0%, trong khi LSI có 47.5% giá trị âm do tính chất trực giao của phân rã SVD.",
+        "% Bằng 0 trong $H$ (Sparsity)": "Độ thưa của ma trận chủ đề. NMF đạt độ thưa vượt trội 54.7%, nghĩa là mỗi chủ đề chỉ tập trung vào một tập từ vựng hữu hạn, loại bỏ nhiễu hiệu quả.",
         "Thời gian huấn luyện": "Thời gian fit mô hình trên 20,000 văn bản thực tế: LSI (~1.7s) nhanh nhất, NMF (~3.0s) rất nhanh, LDA (~561s) chậm nhất do lặp biến phân đa chiều."
     }
 
     key_findings = [
         "NMF đạt Topic Coherence cao nhất (0.7861) và Topic Diversity cao nhất (0.93), thể hiện sự vượt trội rõ rệt trên tập văn bản báo chí tiếng Việt.",
-        "Độ thưa 54.7% của NMF giải thích trực giác: ma trận H chỉ gán trọng số dương cho những từ thực sự đặc trưng của chủ đề, các từ không liên quan được triệt tiêu về 0.",
+        "Độ thưa 54.7% của NMF giải thích trực giác: ma trận $H$ chỉ gán trọng số dương cho những từ thực sự đặc trưng của chủ đề, các từ không liên quan được triệt tiêu về 0.",
         "LSI có tốc độ huấn luyện nhanh nhất (1.69s) và sai số tái tạo nhỏ nhất (134.84), nhưng 47.5% hệ số âm khiến việc giải thích ngữ nghĩa chủ đề khó khăn hơn.",
-        "LDA tạo phân phối xác suất toán học chặt chẽ (theta_d ~ Dirichlet), phân bố tài liệu đồng đều nhất giữa các chủ đề, nhưng thời gian huấn luyện gấp gần 200 lần so với NMF."
+        "LDA tạo phân phối xác suất toán học chặt chẽ ($\\theta_d \\sim \\text{Dirichlet}$), phân bố tài liệu đồng đều nhất giữa các chủ đề, nhưng thời gian huấn luyện gấp gần 200 lần so với NMF."
     ]
 
     return EvaluationResponse(

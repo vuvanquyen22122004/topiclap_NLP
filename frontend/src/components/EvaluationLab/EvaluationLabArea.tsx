@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { api } from '../../api/client';
 import { EvaluationResponse } from '../../types';
+import { RichMathText } from '../MathFormula';
 import {
   ResponsiveContainer,
   BarChart,
@@ -275,7 +276,7 @@ export const EvaluationLabArea: React.FC = () => {
           {data.key_findings.map((finding, idx) => (
             <div key={idx} className="p-3.5 bg-slate-50 rounded-xl border border-slate-200 leading-relaxed">
               <span className="font-bold text-slate-800">#{idx + 1}. </span>
-              {finding}
+              <RichMathText text={finding} />
             </div>
           ))}
         </div>
@@ -286,8 +287,8 @@ export const EvaluationLabArea: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-[11px] text-slate-600">
             {Object.entries(data.metric_definitions).slice(0, 4).map(([k, v], idx) => (
               <div key={idx} className="p-2.5 rounded-lg bg-slate-50 border border-slate-100">
-                <span className="font-bold text-slate-800">{k}: </span>
-                {v}
+                <span className="font-bold text-slate-800"><RichMathText text={k} />: </span>
+                <RichMathText text={v} />
               </div>
             ))}
           </div>

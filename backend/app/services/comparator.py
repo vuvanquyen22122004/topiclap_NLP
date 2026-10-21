@@ -92,7 +92,7 @@ def compare_document_across_models(raw_text: str, document_id: Optional[int] = N
         "scientific_notes": [
             "LSI sử dụng SVD tạo các trục trực giao trong không gian ngữ nghĩa tiềm ẩn. Hệ số có thể âm hoặc dương, thể hiện hướng tương phản ngữ nghĩa.",
             "LDA là mô hình sinh xác suất theo tiên nghiệm Dirichlet, gán mỗi văn bản một phân phối xác suất hợp thức (tổng = 1.0).",
-            "NMF phân rã không âm V ≈ WH, buộc các thành phần chỉ cộng dồn (additive parts-based), loại bỏ hoàn toàn giá trị âm, giúp từ vựng đặc trưng rõ ràng và dễ diễn giải nhất.",
+            "NMF phân rã không âm $V \\approx WH$ ($W \\ge 0, H \\ge 0$), buộc các thành phần chỉ cộng dồn (additive parts-based), loại bỏ hoàn toàn giá trị âm, giúp từ vựng đặc trưng rõ ràng và dễ diễn giải nhất.",
             "Lưu ý quan trọng: Thứ tự topic giữa các mô hình (ví dụ Chủ đề 1 của LSI so với Chủ đề 1 của NMF) KHÔNG mang ý nghĩa tương đương mặc định, do thuật toán phân cụm không giám sát khởi tạo ngẫu nhiên."
         ]
     }

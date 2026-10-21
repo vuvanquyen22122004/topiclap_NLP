@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useApp } from '../../context/AppContext';
+import { MathFormula } from '../MathFormula';
 import {
   ArrowLeft,
   ArrowRight,
@@ -254,7 +255,7 @@ export const PresentationModeView: React.FC = () => {
                   <div>
                     <div className="text-sm font-bold text-white mb-2">Đặc tính kỹ thuật cốt lõi:</div>
                     <ul className="text-sm text-slate-300 space-y-2 pl-5 list-disc leading-relaxed">
-                      <li>Công thức: <code className="text-blue-300 font-mono">A ≈ U_k Σ_k V_kᵀ</code></li>
+                      <li>Công thức: <MathFormula math="A \approx U_k \Sigma_k V_k^T" className="text-blue-300 font-bold ml-1" /></li>
                       <li>Tốc độ huấn luyện siêu tốc: <strong className="text-emerald-400">0.71 giây</strong> trên 20,000 văn bản.</li>
                       <li>Sai số tái tạo Frobenius tối ưu toán học: <strong className="text-white">134.84</strong>.</li>
                       <li><strong className="text-amber-400">Nhược điểm:</strong> 47.5% giá trị trong H mang dấu âm, gây khó khăn khi diễn giải thành xác suất thực tế.</li>
@@ -307,7 +308,7 @@ export const PresentationModeView: React.FC = () => {
                   <div>
                     <div className="text-sm font-bold text-white mb-2">Đặc tính kỹ thuật cốt lõi:</div>
                     <ul className="text-sm text-slate-300 space-y-2 pl-5 list-disc leading-relaxed">
-                      <li>Công thức: <code className="text-emerald-300 font-mono">θ_d ~ Dir(α), φ_k ~ Dir(β)</code></li>
+                      <li>Công thức: <MathFormula math="\theta_d \sim \text{Dir}(\alpha), \; \phi_k \sim \text{Dir}(\beta)" className="text-emerald-300 font-bold ml-1" /></li>
                       <li>Phân phối xác suất chuẩn mực: Tổng xác suất của 10 chủ đề luôn bằng <strong className="text-white">100%</strong>.</li>
                       <li>Topic Coherence đạt: <strong className="text-white">0.6134</strong>.</li>
                       <li><strong className="text-rose-400">Nhược điểm:</strong> Thời gian huấn luyện rất lâu (<strong className="text-rose-300">397.72 giây</strong>, gần 6.6 phút), nhạy cảm với việc tinh chỉnh tham số biến phân.</li>
@@ -360,7 +361,7 @@ export const PresentationModeView: React.FC = () => {
                   <div>
                     <div className="text-sm font-bold text-white mb-2">Đặc tính kỹ thuật cốt lõi:</div>
                     <ul className="text-sm text-slate-300 space-y-2 pl-5 list-disc leading-relaxed">
-                      <li>Công thức: <code className="text-amber-300 font-mono">V ≈ WH, W ≥ 0, H ≥ 0</code></li>
+                      <li>Công thức: <MathFormula math="V \approx WH, \; W \ge 0, \; H \ge 0" className="text-amber-300 font-bold ml-1" /></li>
                       <li>Topic Coherence (c_v) đạt: <strong className="text-amber-400 font-black text-base">0.7861 (Cao nhất)</strong>.</li>
                       <li>Topic Diversity: <strong className="text-emerald-400 font-bold">0.93</strong> (Rất ít trùng lặp từ khóa giữa các chủ đề).</li>
                       <li>Độ thưa trong ma trận H đạt: <strong className="text-white">54.7% giá trị bằng 0</strong>, tự động triệt tiêu từ nhiễu.</li>
@@ -474,7 +475,7 @@ export const PresentationModeView: React.FC = () => {
               <div className="p-5 rounded-2xl bg-slate-900 border border-slate-800 text-xs text-slate-300 leading-relaxed space-y-2">
                 <div className="font-bold text-white text-sm">💡 Giải thích nguyên nhân NMF chiến thắng áp đảo:</div>
                 <p>
-                  1. Ràng buộc phi âm (W, H ≥ 0) ép các thành phần chủ đề phải độc lập và có tính cộng dồn (parts-based).<br />
+                  1. Ràng buộc phi âm (<MathFormula math="W, H \ge 0" className="text-amber-300" />) ép các thành phần chủ đề phải độc lập và có tính cộng dồn (parts-based).<br />
                   2. Ma trận H có độ thưa 54.7%, tự động triệt tiêu các từ vựng gây nhiễu về đúng 0, giữ lại những từ thực sự đại diện cho chủ đề.<br />
                   3. Không bị phân tán bởi nghiệm âm như SVD trong LSI, và không bị chậm chạp bởi lặp biến phân như LDA.
                 </p>

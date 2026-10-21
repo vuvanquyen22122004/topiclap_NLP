@@ -1,5 +1,6 @@
 import React from 'react';
 import { useApp } from '../../context/AppContext';
+import { MathFormula } from '../MathFormula';
 import { 
   ArrowRight, 
   Database, 
@@ -88,7 +89,7 @@ export const OverviewArea: React.FC = () => {
               <div>
                 <h3 className="text-lg font-bold text-slate-900">Latent Semantic Indexing</h3>
                 <p className="text-xs text-slate-600 mt-1 leading-relaxed">
-                  Phân rã ma trận TF-IDF bằng Truncated SVD (<span className="font-mono text-blue-700">A ≈ U Σ Vᵀ</span>) để tìm các trục trực giao tiềm ẩn.
+                  Phân rã ma trận TF-IDF bằng Truncated SVD (<MathFormula math="A \approx U \Sigma V^T" className="text-blue-700 font-bold" />) để tìm các trục trực giao tiềm ẩn.
                 </p>
               </div>
 
@@ -137,7 +138,7 @@ export const OverviewArea: React.FC = () => {
               <div>
                 <h3 className="text-lg font-bold text-slate-900">Latent Dirichlet Allocation</h3>
                 <p className="text-xs text-slate-600 mt-1 leading-relaxed">
-                  Mô hình sinh xác suất giả định mỗi tài liệu là hỗn hợp của các chủ đề theo phân phối Dirichlet (<span className="font-mono text-emerald-700">θ ~ Dir(α)</span>).
+                  Mô hình sinh xác suất giả định mỗi tài liệu là hỗn hợp của các chủ đề theo phân phối Dirichlet (<MathFormula math="\theta \sim \text{Dir}(\alpha)" className="text-emerald-700 font-bold" />).
                 </p>
               </div>
 
@@ -186,7 +187,7 @@ export const OverviewArea: React.FC = () => {
               <div>
                 <h3 className="text-lg font-bold text-slate-900">Non-negative Matrix Factorization</h3>
                 <p className="text-xs text-slate-600 mt-1 leading-relaxed">
-                  Phân rã ma trận TF-IDF <span className="font-mono text-amber-700">V ≈ WH</span> với ràng buộc nghiêm ngặt W, H ≥ 0, tạo biểu diễn từng phần (parts-based).
+                  Phân rã ma trận TF-IDF <MathFormula math="V \approx WH" className="text-amber-700 font-bold" /> với ràng buộc nghiêm ngặt <MathFormula math="W, H \ge 0" className="text-amber-700 font-bold" />, tạo biểu diễn từng phần (parts-based).
                 </p>
               </div>
 
