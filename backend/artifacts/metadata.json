@@ -1,0 +1,401 @@
+{
+  "num_topics": 10,
+  "models_summary": {
+    "LSI": {
+      "coherence": 0.605,
+      "diversity": 0.72,
+      "jaccard": 0.055,
+      "train_time": 0.71,
+      "doc_distribution": [
+        15928,
+        1222,
+        171,
+        790,
+        145,
+        535,
+        549,
+        305,
+        53,
+        302
+      ],
+      "topics": [
+        [
+          {
+            "word": "hai",
+            "weight": 0.098
+          },
+          {
+            "word": "tỉnh",
+            "weight": 0.0863
+          },
+          {
+            "word": "đưa",
+            "weight": 0.0862
+          },
+          {
+            "word": "cùng",
+            "weight": 0.0851
+          },
+          {
+            "word": "đây",
+            "weight": 0.0803
+          },
+          {
+            "word": "ảnh",
+            "weight": 0.0795
+          },
+          {
+            "word": "cho biết",
+            "weight": 0.0777
+          },
+          {
+            "word": "có thể",
+            "weight": 0.0775
+          },
+          {
+            "word": "xe",
+            "weight": 0.0766
+          },
+          {
+            "word": "công an",
+            "weight": 0.0763
+          }
+        ],
+        [
+          {
+            "word": "tổng thống",
+            "weight": 0.1763
+          },
+          {
+            "word": "triều tiên",
+            "weight": 0.1492
+          },
+          {
+            "word": "nga",
+            "weight": 0.1359
+          },
+          {
+            "word": "trump",
+            "weight": 0.1343
+          },
+          {
+            "word": "mỹ",
+            "weight": 0.125
+          },
+          {
+            "word": "trung quốc",
+            "weight": 0.1153
+          },
+          {
+            "word": "tên lửa",
+            "weight": 0.0961
+          },
+          {
+            "word": "tuyên bố",
+            "weight": 0.0947
+          },
+          {
+            "word": "syria",
+            "weight": 0.0902
+          },
+          {
+            "word": "washington",
+            "weight": 0.0771
+          }
+        ],
+        [
+          {
+            "word": "hiện trường",
+            "weight": 0.1369
+          },
+          {
+            "word": "nạn nhân",
+            "weight": 0.0979
+          },
+          {
+            "word": "nga",
+            "weight": 0.0978
+          },
+          {
+            "word": "xe",
+            "weight": 0.0965
+          },
+          {
+            "word": "tai nạn",
+            "weight": 0.0956
+          },
+          {
+            "word": "lực lượng",
+            "weight": 0.095
+          },
+          {
+            "word": "syria",
+            "weight": 0.0925
+          },
+          {
+            "word": "tấn công",
+            "weight": 0.0898
+          },
+          {
+            "word": "cảnh sát",
+            "weight": 0.0892
+          },
+          {
+            "word": "tuổi",
+            "weight": 0.0879
+          }
+        ]
+      ]
+    },
+    "NMF": {
+      "coherence": 0.7861,
+      "diversity": 0.93,
+      "jaccard": 0.0086,
+      "train_time": 2.57,
+      "doc_distribution": [
+        1092,
+        3085,
+        4179,
+        3721,
+        2322,
+        1299,
+        969,
+        1452,
+        1308,
+        573
+      ],
+      "topics": [
+        [
+          {
+            "word": "công an",
+            "weight": 0.9534
+          },
+          {
+            "word": "xe",
+            "weight": 0.7997
+          },
+          {
+            "word": "huyện",
+            "weight": 0.7795
+          },
+          {
+            "word": "hiện trường",
+            "weight": 0.7546
+          },
+          {
+            "word": "xã",
+            "weight": 0.6816
+          },
+          {
+            "word": "tuổi",
+            "weight": 0.6783
+          },
+          {
+            "word": "điều tra",
+            "weight": 0.6756
+          },
+          {
+            "word": "tỉnh",
+            "weight": 0.6076
+          },
+          {
+            "word": "nạn nhân",
+            "weight": 0.5824
+          },
+          {
+            "word": "xảy",
+            "weight": 0.5466
+          }
+        ],
+        [
+          {
+            "word": "tổng thống",
+            "weight": 0.7288
+          },
+          {
+            "word": "nga",
+            "weight": 0.6053
+          },
+          {
+            "word": "triều tiên",
+            "weight": 0.5877
+          },
+          {
+            "word": "trump",
+            "weight": 0.5387
+          },
+          {
+            "word": "mỹ",
+            "weight": 0.5343
+          },
+          {
+            "word": "trung quốc",
+            "weight": 0.5198
+          },
+          {
+            "word": "syria",
+            "weight": 0.4142
+          },
+          {
+            "word": "tuyên bố",
+            "weight": 0.4115
+          },
+          {
+            "word": "tên lửa",
+            "weight": 0.401
+          },
+          {
+            "word": "hai",
+            "weight": 0.381
+          }
+        ],
+        [
+          {
+            "word": "dự án",
+            "weight": 0.4473
+          },
+          {
+            "word": "việt nam",
+            "weight": 0.4101
+          },
+          {
+            "word": "xây dựng",
+            "weight": 0.3955
+          },
+          {
+            "word": "đầu tư",
+            "weight": 0.3909
+          },
+          {
+            "word": "quy định",
+            "weight": 0.3795
+          },
+          {
+            "word": "ubnd",
+            "weight": 0.3697
+          },
+          {
+            "word": "công ty",
+            "weight": 0.363
+          },
+          {
+            "word": "bộ",
+            "weight": 0.3568
+          },
+          {
+            "word": "quản lý",
+            "weight": 0.3517
+          },
+          {
+            "word": "thực hiện",
+            "weight": 0.3515
+          }
+        ]
+      ]
+    },
+    "LDA": {
+      "coherence": 0.6134,
+      "diversity": 0.83,
+      "jaccard": 0.0222,
+      "train_time": 397.72,
+      "doc_distribution": [
+        2281,
+        2631,
+        1720,
+        1626,
+        2282,
+        1099,
+        3017,
+        2371,
+        1810,
+        1163
+      ],
+      "topics": [
+        [
+          {
+            "word": "trung quốc",
+            "weight": 12042.2707
+          },
+          {
+            "word": "tổng thống",
+            "weight": 10135.4883
+          },
+          {
+            "word": "nga",
+            "weight": 9627.4152
+          },
+          {
+            "word": "hai",
+            "weight": 8874.8586
+          },
+          {
+            "word": "triều tiên",
+            "weight": 7395.4925
+          },
+          {
+            "word": "có thể",
+            "weight": 7222.5004
+          },
+          {
+            "word": "mỹ",
+            "weight": 6848.3341
+          },
+          {
+            "word": "trump",
+            "weight": 6708.4926
+          },
+          {
+            "word": "đưa",
+            "weight": 5415.6556
+          },
+          {
+            "word": "syria",
+            "weight": 5409.4973
+          }
+        ],
+        [
+          {
+            "word": "tỉnh",
+            "weight": 13022.1915
+          },
+          {
+            "word": "xe",
+            "weight": 11336.1297
+          },
+          {
+            "word": "ảnh",
+            "weight": 11112.554
+          },
+          {
+            "word": "nhà",
+            "weight": 10821.3409
+          },
+          {
+            "word": "cùng",
+            "weight": 10247.169
+          },
+          {
+            "word": "công an",
+            "weight": 9650.486
+          },
+          {
+            "word": "huyện",
+            "weight": 9496.4566
+          },
+          {
+            "word": "hai",
+            "weight": 8893.1414
+          },
+          {
+            "word": "đường",
+            "weight": 8744.9824
+          },
+          {
+            "word": "tiền",
+            "weight": 8354.223
+          }
+        ]
+      ]
+    }
+  }
+}
