@@ -98,9 +98,9 @@ export const ModelExplorerArea: React.FC = () => {
           {(['lsi', 'lda', 'nmf'] as const).map(tab => {
             const isActive = activeTab === tab;
             const colors = {
-              lsi: isActive ? 'bg-blue-600 text-white' : 'text-slate-600 hover:bg-slate-100',
-              lda: isActive ? 'bg-emerald-600 text-white' : 'text-slate-600 hover:bg-slate-100',
-              nmf: isActive ? 'bg-amber-600 text-white' : 'text-slate-600 hover:bg-slate-100'
+              lsi: isActive ? 'bg-blue-600 text-white shadow-sm' : 'text-slate-600 hover:bg-slate-100',
+              lda: isActive ? 'bg-emerald-600 text-white shadow-sm' : 'text-slate-600 hover:bg-slate-100',
+              nmf: isActive ? 'bg-amber-600 text-white shadow-sm' : 'text-slate-600 hover:bg-slate-100'
             };
             return (
               <button
@@ -109,7 +109,7 @@ export const ModelExplorerArea: React.FC = () => {
                   setActiveTab(tab);
                   setSelectedTopicId(1);
                 }}
-                className={`px-4 py-2.5 rounded-xl text-xs font-bold transition-all uppercase tracking-wider ${colors[tab]}`}
+                className={`px-5 py-2.5 rounded-xl text-sm font-bold transition-all uppercase tracking-wider ${colors[tab]}`}
               >
                 {tab.toUpperCase()}
               </button>
@@ -119,66 +119,68 @@ export const ModelExplorerArea: React.FC = () => {
 
         <button
           onClick={() => setActiveArea('comparison')}
-          className="px-4 py-2 bg-slate-900 hover:bg-slate-800 text-white rounded-xl text-xs font-bold transition-colors flex items-center space-x-1.5"
+          className="px-4 py-2.5 bg-slate-900 hover:bg-slate-800 text-white rounded-xl text-sm font-bold transition-colors flex items-center space-x-2 shadow-xs"
         >
           <span>So sánh trực tiếp cả 3 mô hình</span>
-          <ArrowRight className="w-3.5 h-3.5" />
+          <ArrowRight className="w-4 h-4" />
         </button>
       </div>
 
       {/* Model Overview Box */}
-      <div className="bg-white rounded-2xl border border-slate-200 p-6 shadow-xs space-y-4">
-        <div className="flex flex-col md:flex-row md:items-center justify-between gap-3 pb-3 border-b border-slate-100">
+      <div className="bg-white rounded-2xl border border-slate-200 p-6 lg:p-7 shadow-xs space-y-5">
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-4 border-b border-slate-100">
           <div>
-            <div className="flex items-center space-x-2">
-              <span className={`px-2.5 py-0.5 rounded-full text-xs font-bold border ${tabConfig.badgeBg}`}>
+            <div className="flex items-center space-x-3">
+              <span className={`px-3 py-1 rounded-full text-xs font-bold border tracking-wide ${tabConfig.badgeBg}`}>
                 {activeTab.toUpperCase()}
               </span>
-              <h2 className="text-lg font-bold text-slate-900">{tabConfig.name}</h2>
+              <h2 className="text-xl lg:text-2xl font-bold text-slate-900">{tabConfig.name}</h2>
             </div>
-            <p className="text-xs text-slate-500 mt-1"><RichMathText text={tabConfig.intuition} /></p>
+            <p className="text-sm text-slate-600 mt-1.5 leading-relaxed"><RichMathText text={tabConfig.intuition} /></p>
           </div>
 
-          <div className="text-xs bg-slate-50 p-2.5 rounded-xl border border-slate-200 shrink-0">
-            <span className="text-slate-500">Đầu vào: </span>
+          <div className="text-xs sm:text-sm bg-slate-50 p-3 rounded-xl border border-slate-200 shrink-0">
+            <span className="text-slate-500 font-medium">Đầu vào: </span>
             <span className="font-semibold text-slate-800">{tabConfig.inputDesc}</span>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
-          <div className="p-3 bg-slate-50 rounded-xl border border-slate-200 space-y-1">
-            <strong className="text-slate-700">Nguyên lý toán học:</strong>
-            <div className="text-slate-700 text-xs py-0.5">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="p-4 bg-slate-50 rounded-xl border border-slate-200 space-y-1.5">
+            <strong className="text-sm font-bold text-slate-700">Nguyên lý toán học:</strong>
+            <div className="text-sm text-slate-800 py-0.5 leading-relaxed">
               <RichMathText text={tabConfig.principle} />
             </div>
           </div>
-          <div className="p-3 bg-amber-50/70 rounded-xl border border-amber-200 space-y-1">
-            <strong className="text-amber-800 flex items-center gap-1">
-              <AlertCircle className="w-3.5 h-3.5 text-amber-600 shrink-0" />
+          <div className="p-4 bg-amber-50/70 rounded-xl border border-amber-200 space-y-1.5">
+            <strong className="text-sm font-bold text-amber-800 flex items-center gap-1.5">
+              <AlertCircle className="w-4 h-4 text-amber-600 shrink-0" />
               Lưu ý diễn giải:
             </strong>
-            <p className="text-amber-700 text-[11px]">{tabConfig.caveat}</p>
+            <p className="text-xs sm:text-sm text-amber-800 leading-relaxed">{tabConfig.caveat}</p>
           </div>
         </div>
       </div>
 
       {/* Topic Selector Pills */}
-      <div className="bg-white rounded-2xl border border-slate-200 p-5 shadow-xs space-y-3">
+      <div className="bg-white rounded-2xl border border-slate-200 p-5 lg:p-6 shadow-xs space-y-3.5">
         <div className="flex items-center justify-between">
-          <h3 className="font-bold text-slate-800 text-xs">
+          <h3 className="font-bold text-slate-800 text-sm">
             Chọn chủ đề để xem chi tiết danh sách từ khóa và trọng số:
           </h3>
-          <span className="text-xs text-slate-400 font-mono">10 Chủ đề đã học</span>
+          <span className="text-xs sm:text-sm text-slate-500 font-semibold font-mono">
+            {currentSummary?.topics.length || 10} Chủ đề đã học
+          </span>
         </div>
 
-        <div className="flex items-center space-x-2 overflow-x-auto pb-1">
+        <div className="flex items-center space-x-2 overflow-x-auto pb-1.5 pt-0.5">
           {currentSummary?.topics.map(t => {
             const isSelected = selectedTopicId === t.topic_id;
             return (
               <button
                 key={t.topic_id}
                 onClick={() => setSelectedTopicId(t.topic_id)}
-                className={`px-3 py-1.5 rounded-xl text-xs font-semibold whitespace-nowrap transition-all border ${
+                className={`px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap transition-all border ${
                   isSelected
                     ? `${tabConfig.bgColor} text-white border-transparent shadow-xs`
                     : 'bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100'
@@ -191,12 +193,12 @@ export const ModelExplorerArea: React.FC = () => {
         </div>
 
         {currentTopic && (
-          <div className="text-xs text-slate-600 bg-slate-50 p-2.5 rounded-xl border border-slate-200 flex items-center justify-between">
+          <div className="text-sm text-slate-700 bg-slate-50 p-3 rounded-xl border border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
             <div>
               <span className="font-bold text-slate-700">Nhãn chủ đề: </span>
-              <span className={`font-semibold ${tabConfig.textColor}`}>{currentTopic.label}</span>
+              <span className={`text-base font-bold ${tabConfig.textColor}`}>{currentTopic.label}</span>
             </div>
-            <div className="text-[11px] text-slate-400">
+            <div className="text-xs text-slate-500 font-medium">
               Top 15 từ vựng đặc trưng
             </div>
           </div>
@@ -208,24 +210,24 @@ export const ModelExplorerArea: React.FC = () => {
         {/* Top Words Chart */}
         <div className="lg:col-span-7 bg-white rounded-2xl border border-slate-200 p-6 shadow-xs space-y-4">
           <div className="flex items-center justify-between">
-            <h4 className="font-bold text-slate-800 text-xs flex items-center space-x-2">
+            <h4 className="font-bold text-slate-800 text-sm flex items-center space-x-2">
               <BarChart2 className="w-4 h-4 text-blue-600" />
-              <span>Biểu Đồ Trọng Số Top 10 Từ Khóa Trong Chủ Đề ({tabConfig.metricLabel})</span>
+              <span>Biểu Đồ Trọng Số Top 10 Từ Khóa ({tabConfig.metricLabel})</span>
             </h4>
           </div>
 
-          <div className="h-72 w-full">
+          <div className="h-80 w-full">
             <ResponsiveContainer width="100%" height="100%">
               <BarChart
                 data={topWordsData}
                 layout="vertical"
-                margin={{ top: 5, right: 30, left: 60, bottom: 5 }}
+                margin={{ top: 5, right: 30, left: 70, bottom: 5 }}
               >
-                <XAxis type="number" tick={{ fontSize: 11 }} />
-                <YAxis dataKey="word" type="category" tick={{ fontSize: 11 }} width={90} />
+                <XAxis type="number" tick={{ fontSize: 12 }} />
+                <YAxis dataKey="word" type="category" tick={{ fontSize: 12.5 }} width={100} />
                 <Tooltip
                   formatter={(val: any) => [`${val} ${tabConfig.unit}`, tabConfig.metricLabel]}
-                  contentStyle={{ backgroundColor: '#fff', borderRadius: '8px', border: '1px solid #e2e8f0', fontSize: '11px' }}
+                  contentStyle={{ backgroundColor: '#fff', borderRadius: '8px', border: '1px solid #e2e8f0', fontSize: '13px' }}
                 />
                 <Bar dataKey="weight" fill={tabConfig.color} radius={[0, 4, 4, 0]}>
                   {topWordsData.map((_, index) => (
@@ -241,7 +243,7 @@ export const ModelExplorerArea: React.FC = () => {
         <div className="lg:col-span-5 bg-white rounded-2xl border border-slate-200 p-6 shadow-xs space-y-4 flex flex-col justify-between">
           <div className="space-y-3">
             <div className="flex items-center justify-between">
-              <h4 className="font-bold text-slate-800 text-xs flex items-center space-x-2">
+              <h4 className="font-bold text-slate-800 text-sm flex items-center space-x-2">
                 <FileCheck className="w-4 h-4 text-emerald-600" />
                 <span>Biểu Diễn Tài Liệu Đang Xem (10 Chủ Đề)</span>
               </h4>
@@ -249,14 +251,14 @@ export const ModelExplorerArea: React.FC = () => {
 
             {docRep ? (
               <>
-                <div className="h-48 w-full">
+                <div className="h-52 w-full">
                   <ResponsiveContainer width="100%" height="100%">
                     <BarChart data={docRepData} margin={{ top: 5, right: 10, left: -20, bottom: 5 }}>
-                      <XAxis dataKey="topic" tick={{ fontSize: 9 }} />
-                      <YAxis tick={{ fontSize: 9 }} />
+                      <XAxis dataKey="topic" tick={{ fontSize: 11 }} />
+                      <YAxis tick={{ fontSize: 11 }} />
                       <Tooltip
                         formatter={(val: any) => [`${val} ${tabConfig.unit}`, docRep.weight_type]}
-                        contentStyle={{ fontSize: '11px', borderRadius: '8px' }}
+                        contentStyle={{ fontSize: '12px', borderRadius: '8px' }}
                       />
                       {activeTab === 'lsi' && <ReferenceLine y={0} stroke="#94a3b8" />}
                       <Bar dataKey="value" radius={[3, 3, 0, 0]}>
@@ -271,30 +273,30 @@ export const ModelExplorerArea: React.FC = () => {
                   </ResponsiveContainer>
                 </div>
 
-                <div className="text-xs bg-slate-50 p-3.5 rounded-xl border border-slate-200 space-y-1.5">
+                <div className="text-sm bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-2">
                   <div className="flex items-center justify-between">
-                    <span className="text-slate-500">Chủ đề chủ đạo:</span>
+                    <span className="text-slate-600 font-medium">Chủ đề chủ đạo:</span>
                     <span className={`font-bold ${tabConfig.textColor}`}>
                       {docRep.dominant_topic_name}
                     </span>
                   </div>
                   <div className="flex items-center justify-between">
-                    <span className="text-slate-500">Độ tin cậy nhận diện:</span>
+                    <span className="text-slate-600 font-medium">Độ tin cậy nhận diện:</span>
                     <span className="font-semibold text-slate-800">{docRep.confidence_level}</span>
                   </div>
-                  <p className="text-[11px] text-slate-500 leading-relaxed pt-1 border-t border-slate-200">
+                  <p className="text-xs sm:text-sm text-slate-600 leading-relaxed pt-2 border-t border-slate-200">
                     {docRep.interpretation}
                   </p>
                 </div>
               </>
             ) : (
-              <div className="p-8 text-center text-xs text-slate-400">
+              <div className="p-8 text-center text-sm text-slate-400">
                 Chưa có dữ liệu suy luận tài liệu.
               </div>
             )}
           </div>
 
-          <div className="text-[11px] text-slate-400 text-center pt-2 border-t border-slate-100">
+          <div className="text-xs text-slate-400 text-center pt-2 border-t border-slate-100">
             Dữ liệu suy luận thời gian thực trên mô hình đã huấn luyện
           </div>
         </div>

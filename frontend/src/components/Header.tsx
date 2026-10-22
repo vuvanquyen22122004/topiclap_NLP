@@ -32,55 +32,55 @@ export const Header: React.FC = () => {
   const current = areaTitles[activeArea] || { title: "TopicLab", subtitle: "Topic Modeling Platform" };
 
   return (
-    <header className="h-16 bg-white border-b border-slate-200 px-6 flex items-center justify-between sticky top-0 z-20 shadow-xs">
+    <header className="h-18 bg-white border-b border-slate-200 px-8 flex items-center justify-between sticky top-0 z-20 shadow-xs">
       <div className="flex items-center space-x-4">
         <div>
-          <div className="flex items-center space-x-2">
-            <h1 className="text-lg font-bold text-slate-800 tracking-tight">{current.title}</h1>
-            <span className="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded-full font-medium border border-slate-200">
+          <div className="flex items-center space-x-2.5">
+            <h1 className="text-xl font-bold text-slate-900 tracking-tight">{current.title}</h1>
+            <span className="text-xs bg-slate-100 text-slate-700 px-2.5 py-0.5 rounded-full font-semibold border border-slate-200">
               v1.0 Academic
             </span>
           </div>
-          <p className="text-xs text-slate-500 font-normal">{current.subtitle}</p>
+          <p className="text-sm text-slate-500 font-medium mt-0.5">{current.subtitle}</p>
         </div>
       </div>
 
-      <div className="flex items-center space-x-3">
+      <div className="flex items-center space-x-3.5">
         {selectedDocument && (
-          <div className="hidden lg:flex items-center space-x-1.5 bg-slate-50 border border-slate-200 px-3 py-1.5 rounded-lg text-xs text-slate-600 max-w-xs truncate">
-            <FileCheck2 className="w-3.5 h-3.5 text-blue-600 shrink-0" />
-            <span className="font-medium text-slate-500">Tài liệu:</span>
-            <span className="font-semibold text-slate-700 truncate">{selectedDocument.title}</span>
+          <div className="hidden lg:flex items-center space-x-2 bg-slate-50 border border-slate-200 px-3.5 py-1.5 rounded-xl text-xs text-slate-600 max-w-sm truncate">
+            <FileCheck2 className="w-4 h-4 text-blue-600 shrink-0" />
+            <span className="font-semibold text-slate-500">Tài liệu:</span>
+            <span className="font-bold text-slate-800 truncate">{selectedDocument.title}</span>
           </div>
         )}
 
         {/* Backend Status Badge */}
-        <div className="flex items-center space-x-1.5 px-2.5 py-1 rounded-full text-xs font-medium border bg-emerald-50 text-emerald-700 border-emerald-200">
-          <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-          <span className="font-semibold">Backend Sẵn sàng</span>
-          <span className="text-emerald-600/80 text-[10px]">({backendLatencyMs}ms)</span>
+        <div className="flex items-center space-x-2 px-3 py-1.5 rounded-full text-xs font-semibold border bg-emerald-50 text-emerald-800 border-emerald-200">
+          <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+          <span>Backend Sẵn sàng</span>
+          <span className="text-emerald-700/80 font-mono text-xs">({backendLatencyMs}ms)</span>
         </div>
 
         {/* Reset Demo Button */}
         <button
           onClick={resetDemo}
-          className="flex items-center space-x-1.5 px-3 py-1.5 text-xs font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 rounded-lg transition-colors border border-slate-200"
+          className="flex items-center space-x-2 px-3.5 py-2 text-sm font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 rounded-xl transition-colors border border-slate-200"
           title="Khôi phục trạng thái ban đầu"
         >
-          <RotateCcw className="w-3.5 h-3.5" />
+          <RotateCcw className="w-4 h-4" />
           <span className="hidden sm:inline">Khôi phục demo</span>
         </button>
 
         {/* Presentation Mode Toggle */}
         <button
           onClick={togglePresentationMode}
-          className={`flex items-center space-x-1.5 px-3.5 py-1.5 rounded-lg text-xs font-semibold shadow-xs transition-all ${
+          className={`flex items-center space-x-2 px-4 py-2 rounded-xl text-sm font-bold shadow-xs transition-all ${
             isPresentationMode
               ? 'bg-amber-600 text-white hover:bg-amber-700'
               : 'bg-indigo-600 text-white hover:bg-indigo-700 hover:shadow-indigo-200'
           }`}
         >
-          <Tv className="w-4 h-4" />
+          <Tv className="w-4.5 h-4.5" />
           <span>{isPresentationMode ? 'Thoát thuyết trình' : 'Chế độ Thuyết trình'}</span>
         </button>
       </div>

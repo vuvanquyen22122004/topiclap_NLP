@@ -93,49 +93,49 @@ export const TheoryLabArea: React.FC = () => {
       </div>
 
       {/* Main Content Card */}
-      <div className="bg-white rounded-2xl border border-slate-200 p-8 shadow-xs space-y-8">
+      <div className="bg-white rounded-2xl border border-slate-200 p-8 lg:p-9 shadow-xs space-y-9">
         {/* Title & Intuition */}
-        <div className="space-y-3 pb-6 border-b border-slate-100">
-          <div className="flex items-center space-x-2">
-            <span className={`px-3 py-1 rounded-full text-xs font-bold border ${
+        <div className="space-y-4 pb-7 border-b border-slate-100">
+          <div className="flex items-center space-x-3">
+            <span className={`px-3.5 py-1 rounded-full text-xs font-bold border ${
               activeModel === 'lsi' ? 'bg-blue-100 text-blue-800 border-blue-300' :
               activeModel === 'lda' ? 'bg-emerald-100 text-emerald-800 border-emerald-300' :
               'bg-amber-100 text-amber-800 border-amber-300'
             }`}>
               {current.name}
             </span>
-            <h3 className="text-xl font-extrabold text-slate-900">{current.full_name}</h3>
+            <h3 className="text-2xl font-black text-slate-900 tracking-tight">{current.full_name}</h3>
           </div>
 
-          <div className="p-4 bg-slate-50 rounded-xl border border-slate-200 text-sm text-slate-700 leading-relaxed">
-            <strong className="text-slate-900 block mb-1">💡 Trực giác đời thường (Intuition):</strong>
+          <div className="p-5 bg-slate-50 rounded-xl border border-slate-200 text-base text-slate-700 leading-relaxed">
+            <strong className="text-slate-900 font-bold block mb-1.5 text-base">💡 Trực giác đời thường (Intuition):</strong>
             {current.intuition}
           </div>
         </div>
 
         {/* Toy Example */}
-        <div className="space-y-3">
-          <h4 className="text-sm font-bold text-slate-900 flex items-center space-x-2">
-            <Sparkles className="w-4 h-4 text-indigo-600" />
+        <div className="space-y-3.5">
+          <h4 className="text-base font-bold text-slate-900 flex items-center space-x-2">
+            <Sparkles className="w-4.5 h-4.5 text-indigo-600" />
             <span>Ví Dụ Minh Họa Nhỏ (Toy Example)</span>
           </h4>
-          <div className="p-4 bg-slate-50 rounded-xl border border-slate-200 space-y-2 text-xs">
-            <p className="font-semibold text-slate-800"><RichMathText text={current.toy_example.description} /></p>
-            <p className="text-slate-600 leading-relaxed"><RichMathText text={current.toy_example.explanation} /></p>
+          <div className="p-5 bg-slate-50 rounded-xl border border-slate-200 space-y-2.5 text-sm">
+            <p className="font-bold text-slate-900 text-sm"><RichMathText text={current.toy_example.description} /></p>
+            <p className="text-slate-600 leading-relaxed text-sm"><RichMathText text={current.toy_example.explanation} /></p>
           </div>
         </div>
 
         {/* Processing Pipeline Workflow */}
-        <div className="space-y-3">
-          <h4 className="text-sm font-bold text-slate-900 flex items-center space-x-2">
-            <Layers className="w-4 h-4 text-blue-600" />
+        <div className="space-y-3.5">
+          <h4 className="text-base font-bold text-slate-900 flex items-center space-x-2">
+            <Layers className="w-4.5 h-4.5 text-blue-600" />
             <span>Sơ Đồ Luồng Xử Lý (Processing Pipeline)</span>
           </h4>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-3">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
             {current.processing_pipeline.map((item, idx) => (
-              <div key={idx} className="p-3.5 bg-slate-50 rounded-xl border border-slate-200 space-y-1 text-xs">
-                <div className="font-bold text-slate-900">{item.step}</div>
-                <div className="text-[11px] text-slate-600 leading-relaxed">
+              <div key={idx} className="p-4 bg-slate-50 rounded-xl border border-slate-200 space-y-1.5 text-sm">
+                <div className="font-bold text-slate-900 text-sm">{item.step}</div>
+                <div className="text-xs text-slate-600 leading-relaxed">
                   <RichMathText text={item.detail} />
                 </div>
               </div>
@@ -144,68 +144,68 @@ export const TheoryLabArea: React.FC = () => {
         </div>
 
         {/* Mathematical Formulations & Symbol Table */}
-        <div className="space-y-4">
+        <div className="space-y-5">
           <div className="flex items-center justify-between">
-            <h4 className="text-sm font-bold text-slate-900 flex items-center space-x-2">
-              <Calculator className="w-4 h-4 text-emerald-600" />
+            <h4 className="text-base font-bold text-slate-900 flex items-center space-x-2">
+              <Calculator className="w-4.5 h-4.5 text-emerald-600" />
               <span>Công Thức Toán Học & Giải Thích Ký Hiệu</span>
             </h4>
-            <span className="text-[10px] text-slate-400 font-mono">Rendered by KaTeX Math Engine</span>
+            <span className="text-xs text-slate-400 font-mono">Rendered by KaTeX Math Engine</span>
           </div>
 
           {/* Formulas Highlight (Clean KaTeX display) */}
-          <div className="p-6 bg-slate-900 text-slate-100 rounded-2xl space-y-4 shadow-xl border border-slate-800">
-            <div className="flex items-center justify-between border-b border-slate-800 pb-2">
+          <div className="p-7 bg-slate-900 text-slate-100 rounded-2xl space-y-5 shadow-xl border border-slate-800">
+            <div className="flex items-center justify-between border-b border-slate-800 pb-2.5">
               <div className="text-xs text-indigo-400 uppercase tracking-wider font-bold">
                 Phương trình toán học cốt lõi ({current.name})
               </div>
-              <span className="text-[10px] px-2 py-0.5 rounded bg-slate-800 text-slate-300 font-mono">Chuẩn LaTeX</span>
+              <span className="text-xs px-2.5 py-0.5 rounded bg-slate-800 text-slate-300 font-mono">Chuẩn LaTeX</span>
             </div>
 
-            <div className="py-2 text-emerald-400 overflow-x-auto text-center">
+            <div className="py-3 text-emerald-400 overflow-x-auto text-center">
               <MathFormula
                 math={current.math_formulation.main_equation}
                 block
-                className="text-lg lg:text-xl font-bold tracking-wide"
+                className="text-xl lg:text-2xl font-bold tracking-wide"
               />
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 pt-3 border-t border-slate-800/80 text-xs">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-3.5 border-t border-slate-800/80 text-sm">
               {current.math_formulation.objective && (
-                <div className="p-3 bg-slate-950/80 rounded-xl border border-slate-800 space-y-1">
-                  <span className="text-slate-400 block font-semibold text-[11px]">Mục tiêu tối ưu hóa:</span>
+                <div className="p-4 bg-slate-950/80 rounded-xl border border-slate-800 space-y-1.5">
+                  <span className="text-slate-400 block font-semibold text-xs">Mục tiêu tối ưu hóa:</span>
                   <div className="overflow-x-auto py-1 text-slate-100">
                     <MathFormula math={current.math_formulation.objective} />
                   </div>
                 </div>
               )}
               {current.math_formulation.projection && (
-                <div className="p-3 bg-slate-950/80 rounded-xl border border-slate-800 space-y-1">
-                  <span className="text-slate-400 block font-semibold text-[11px]">Chiếu vector tài liệu:</span>
+                <div className="p-4 bg-slate-950/80 rounded-xl border border-slate-800 space-y-1.5">
+                  <span className="text-slate-400 block font-semibold text-xs">Chiếu vector tài liệu:</span>
                   <div className="overflow-x-auto py-1 text-slate-100">
                     <MathFormula math={current.math_formulation.projection} />
                   </div>
                 </div>
               )}
               {current.math_formulation.topic_dist && (
-                <div className="p-3 bg-slate-950/80 rounded-xl border border-slate-800 space-y-1">
-                  <span className="text-slate-400 block font-semibold text-[11px]">Phân phối chủ đề tài liệu:</span>
+                <div className="p-4 bg-slate-950/80 rounded-xl border border-slate-800 space-y-1.5">
+                  <span className="text-slate-400 block font-semibold text-xs">Phân phối chủ đề tài liệu:</span>
                   <div className="overflow-x-auto py-1 text-slate-100">
                     <MathFormula math={current.math_formulation.topic_dist} />
                   </div>
                 </div>
               )}
               {current.math_formulation.word_dist && (
-                <div className="p-3 bg-slate-950/80 rounded-xl border border-slate-800 space-y-1">
-                  <span className="text-slate-400 block font-semibold text-[11px]">Phân phối từ trong chủ đề:</span>
+                <div className="p-4 bg-slate-950/80 rounded-xl border border-slate-800 space-y-1.5">
+                  <span className="text-slate-400 block font-semibold text-xs">Phân phối từ trong chủ đề:</span>
                   <div className="overflow-x-auto py-1 text-slate-100">
                     <MathFormula math={current.math_formulation.word_dist} />
                   </div>
                 </div>
               )}
               {current.math_formulation.update_rule && (
-                <div className="p-3 bg-slate-950/80 rounded-xl border border-slate-800 space-y-1">
-                  <span className="text-slate-400 block font-semibold text-[11px]">Quy tắc cập nhật luân phiên:</span>
+                <div className="p-4 bg-slate-950/80 rounded-xl border border-slate-800 space-y-1.5">
+                  <span className="text-slate-400 block font-semibold text-xs">Quy tắc cập nhật luân phiên:</span>
                   <div className="overflow-x-auto py-1 text-slate-100">
                     <MathFormula math={current.math_formulation.update_rule} />
                   </div>
@@ -216,20 +216,20 @@ export const TheoryLabArea: React.FC = () => {
 
           {/* Symbol Table */}
           <div className="overflow-x-auto border border-slate-200 rounded-xl">
-            <table className="w-full text-xs text-left border-collapse">
+            <table className="w-full text-sm text-left border-collapse">
               <thead>
-                <tr className="bg-slate-100 text-slate-700 font-bold border-b border-slate-200">
-                  <th className="py-3 px-4 w-36">Ký hiệu</th>
-                  <th className="py-3 px-4">Ý nghĩa toán học & vật lý trong TopicLab</th>
+                <tr className="bg-slate-100 text-slate-800 font-bold border-b border-slate-200 text-sm">
+                  <th className="py-3.5 px-4 w-40">Ký hiệu</th>
+                  <th className="py-3.5 px-4">Ý nghĩa toán học & vật lý trong TopicLab</th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-slate-200 text-slate-700 bg-white">
+              <tbody className="divide-y divide-slate-200 text-slate-700 bg-white text-sm">
                 {current.symbol_table.map((sym, idx) => (
                   <tr key={idx} className="hover:bg-slate-50 transition-colors">
-                    <td className="py-3 px-4 text-indigo-700 font-semibold whitespace-nowrap">
-                      <MathFormula math={sym.symbol} className="text-sm font-bold text-indigo-700" />
+                    <td className="py-3.5 px-4 text-indigo-700 font-bold whitespace-nowrap">
+                      <MathFormula math={sym.symbol} className="text-base font-bold text-indigo-700" />
                     </td>
-                    <td className="py-3 px-4 leading-relaxed text-xs text-slate-700">
+                    <td className="py-3.5 px-4 leading-relaxed text-sm text-slate-700">
                       <RichMathText text={sym.meaning} />
                     </td>
                   </tr>
@@ -241,24 +241,24 @@ export const TheoryLabArea: React.FC = () => {
 
         {/* Pros & Cons Balance Sheet */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
-          <div className="p-5 bg-emerald-50/50 rounded-2xl border border-emerald-200 space-y-2">
-            <div className="text-xs font-bold text-emerald-900 uppercase tracking-wider flex items-center space-x-1.5">
-              <CheckCircle className="w-4 h-4 text-emerald-600" />
+          <div className="p-6 bg-emerald-50/50 rounded-2xl border border-emerald-200 space-y-2.5">
+            <div className="text-sm font-bold text-emerald-900 uppercase tracking-wider flex items-center space-x-2">
+              <CheckCircle className="w-4.5 h-4.5 text-emerald-600" />
               <span>Ưu điểm vượt trội</span>
             </div>
-            <ul className="text-xs text-emerald-800 space-y-1.5 pl-4 list-disc leading-relaxed">
+            <ul className="text-sm text-emerald-800 space-y-2 pl-4 list-disc leading-relaxed">
               {current.pros.map((p, i) => (
                 <li key={i}><RichMathText text={p} /></li>
               ))}
             </ul>
           </div>
 
-          <div className="p-5 bg-rose-50/50 rounded-2xl border border-rose-200 space-y-2">
-            <div className="text-xs font-bold text-rose-900 uppercase tracking-wider flex items-center space-x-1.5">
-              <XCircle className="w-4 h-4 text-rose-600" />
+          <div className="p-6 bg-rose-50/50 rounded-2xl border border-rose-200 space-y-2.5">
+            <div className="text-sm font-bold text-rose-900 uppercase tracking-wider flex items-center space-x-2">
+              <XCircle className="w-4.5 h-4.5 text-rose-600" />
               <span>Hạn chế & Lưu ý</span>
             </div>
-            <ul className="text-xs text-rose-800 space-y-1.5 pl-4 list-disc leading-relaxed">
+            <ul className="text-sm text-rose-800 space-y-2 pl-4 list-disc leading-relaxed">
               {current.cons.map((c, i) => (
                 <li key={i}><RichMathText text={c} /></li>
               ))}
@@ -267,10 +267,10 @@ export const TheoryLabArea: React.FC = () => {
         </div>
 
         {/* Interactive Mini Quiz */}
-        <div className="space-y-4 pt-4 border-t border-slate-100">
+        <div className="space-y-4 pt-5 border-t border-slate-100">
           <div className="flex items-center space-x-2">
             <HelpCircle className="w-5 h-5 text-indigo-600" />
-            <h4 className="text-sm font-bold text-slate-900">
+            <h4 className="text-base font-bold text-slate-900">
               Kiểm Tra Mức Độ Hiểu Bài (Interactive Comprehension Check)
             </h4>
           </div>
@@ -282,12 +282,12 @@ export const TheoryLabArea: React.FC = () => {
               const isCorrect = selectedIdx === q.correct_index;
 
               return (
-                <div key={q.id} className="p-5 rounded-2xl border border-slate-200 bg-slate-50 space-y-3">
-                  <div className="text-xs font-bold text-slate-900">
+                <div key={q.id} className="p-6 rounded-2xl border border-slate-200 bg-slate-50 space-y-3.5">
+                  <div className="text-sm font-bold text-slate-900 leading-snug">
                     Câu hỏi: <RichMathText text={q.question} />
                   </div>
 
-                  <div className="space-y-2">
+                  <div className="space-y-2.5">
                     {q.options.map((opt, optIdx) => {
                       const isOptionSelected = selectedIdx === optIdx;
                       const isOptionCorrect = optIdx === q.correct_index;
@@ -306,14 +306,14 @@ export const TheoryLabArea: React.FC = () => {
                           key={optIdx}
                           disabled={isAnswered}
                           onClick={() => handleSelectOption(q.id, optIdx)}
-                          className={`w-full text-left px-4 py-2.5 rounded-xl text-xs border transition-all flex items-center justify-between ${btnStyle}`}
+                          className={`w-full text-left px-4.5 py-3 rounded-xl text-sm border transition-all flex items-center justify-between ${btnStyle}`}
                         >
-                          <span><RichMathText text={opt} /></span>
+                          <span className="leading-relaxed"><RichMathText text={opt} /></span>
                           {isAnswered && isOptionCorrect && (
-                            <CheckCircle className="w-4 h-4 text-emerald-600 shrink-0 ml-2" />
+                            <CheckCircle className="w-4.5 h-4.5 text-emerald-600 shrink-0 ml-2" />
                           )}
                           {isAnswered && isOptionSelected && !isCorrect && (
-                            <XCircle className="w-4 h-4 text-rose-600 shrink-0 ml-2" />
+                            <XCircle className="w-4.5 h-4.5 text-rose-600 shrink-0 ml-2" />
                           )}
                         </button>
                       );
@@ -322,7 +322,7 @@ export const TheoryLabArea: React.FC = () => {
 
                   {/* Feedback explanation */}
                   {showExplanation[q.id] && (
-                    <div className={`p-3.5 rounded-xl text-xs leading-relaxed ${
+                    <div className={`p-4 rounded-xl text-sm leading-relaxed ${
                       isCorrect ? 'bg-emerald-100/70 text-emerald-900 border border-emerald-300' : 'bg-rose-100/70 text-rose-900 border border-rose-300'
                     }`}>
                       <span className="font-bold">{isCorrect ? '✓ Chính xác! ' : '✗ Chưa đúng. '}</span>

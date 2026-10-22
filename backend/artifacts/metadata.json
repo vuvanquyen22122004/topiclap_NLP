@@ -76,7 +76,7 @@
           },
           {
             "word": "trump",
-            "weight": 0.1343
+            "weight": 0.1344
           },
           {
             "word": "mỹ",
@@ -96,7 +96,7 @@
           },
           {
             "word": "syria",
-            "weight": 0.0902
+            "weight": 0.0901
           },
           {
             "word": "washington",
@@ -126,11 +126,11 @@
           },
           {
             "word": "lực lượng",
-            "weight": 0.095
+            "weight": 0.0949
           },
           {
             "word": "syria",
-            "weight": 0.0925
+            "weight": 0.0924
           },
           {
             "word": "tấn công",
@@ -143,6 +143,510 @@
           {
             "word": "tuổi",
             "weight": 0.0879
+          }
+        ],
+        [
+          {
+            "word": "cô",
+            "weight": 0.1687
+          },
+          {
+            "word": "trường",
+            "weight": 0.1347
+          },
+          {
+            "word": "tuổi",
+            "weight": 0.1063
+          },
+          {
+            "word": "học",
+            "weight": 0.1028
+          },
+          {
+            "word": "gia đình",
+            "weight": 0.1015
+          },
+          {
+            "word": "học sinh",
+            "weight": 0.0977
+          },
+          {
+            "word": "bé",
+            "weight": 0.0967
+          },
+          {
+            "word": "trẻ",
+            "weight": 0.0936
+          },
+          {
+            "word": "mẹ",
+            "weight": 0.09
+          },
+          {
+            "word": "chia sẻ",
+            "weight": 0.0883
+          }
+        ],
+        [
+          {
+            "word": "công an",
+            "weight": 0.2014
+          },
+          {
+            "word": "điều tra",
+            "weight": 0.1585
+          },
+          {
+            "word": "cơ quan",
+            "weight": 0.1414
+          },
+          {
+            "word": "án",
+            "weight": 0.1229
+          },
+          {
+            "word": "tổng thống",
+            "weight": 0.1166
+          },
+          {
+            "word": "đối tượng",
+            "weight": 0.1151
+          },
+          {
+            "word": "trump",
+            "weight": 0.1052
+          },
+          {
+            "word": "hành vi",
+            "weight": 0.1047
+          },
+          {
+            "word": "liên quan",
+            "weight": 0.0838
+          },
+          {
+            "word": "khởi tố",
+            "weight": 0.0795
+          }
+        ],
+        [
+          {
+            "word": "syria",
+            "weight": 0.2598
+          },
+          {
+            "word": "tấn công",
+            "weight": 0.1608
+          },
+          {
+            "word": "nga",
+            "weight": 0.1549
+          },
+          {
+            "word": "is",
+            "weight": 0.1391
+          },
+          {
+            "word": "quân đội",
+            "weight": 0.1284
+          },
+          {
+            "word": "khủng bố",
+            "weight": 0.0995
+          },
+          {
+            "word": "lực lượng",
+            "weight": 0.0987
+          },
+          {
+            "word": "phiến",
+            "weight": 0.0939
+          },
+          {
+            "word": "quân",
+            "weight": 0.0916
+          },
+          {
+            "word": "trường",
+            "weight": 0.0911
+          }
+        ],
+        [
+          {
+            "word": "trường",
+            "weight": 0.2206
+          },
+          {
+            "word": "học sinh",
+            "weight": 0.1722
+          },
+          {
+            "word": "thi",
+            "weight": 0.1584
+          },
+          {
+            "word": "thpt",
+            "weight": 0.131
+          },
+          {
+            "word": "thí sinh",
+            "weight": 0.126
+          },
+          {
+            "word": "gd",
+            "weight": 0.1198
+          },
+          {
+            "word": "đt",
+            "weight": 0.1185
+          },
+          {
+            "word": "lớp",
+            "weight": 0.1119
+          },
+          {
+            "word": "triều tiên",
+            "weight": 0.105
+          },
+          {
+            "word": "học",
+            "weight": 0.1039
+          }
+        ],
+        [
+          {
+            "word": "xe",
+            "weight": 0.2435
+          },
+          {
+            "word": "tai nạn",
+            "weight": 0.1811
+          },
+          {
+            "word": "tài xế",
+            "weight": 0.1582
+          },
+          {
+            "word": "giao thông",
+            "weight": 0.1502
+          },
+          {
+            "word": "ôtô",
+            "weight": 0.1399
+          },
+          {
+            "word": "syria",
+            "weight": 0.1027
+          },
+          {
+            "word": "xe máy",
+            "weight": 0.0909
+          },
+          {
+            "word": "tổng thống",
+            "weight": 0.0905
+          },
+          {
+            "word": "chạy",
+            "weight": 0.0904
+          },
+          {
+            "word": "xe tải",
+            "weight": 0.0864
+          }
+        ],
+        [
+          {
+            "word": "triều tiên",
+            "weight": 0.1602
+          },
+          {
+            "word": "tên lửa",
+            "weight": 0.1406
+          },
+          {
+            "word": "trường",
+            "weight": 0.1217
+          },
+          {
+            "word": "công an",
+            "weight": 0.1109
+          },
+          {
+            "word": "máy bay",
+            "weight": 0.101
+          },
+          {
+            "word": "thi",
+            "weight": 0.0993
+          },
+          {
+            "word": "bay",
+            "weight": 0.093
+          },
+          {
+            "word": "hàn quốc",
+            "weight": 0.0928
+          },
+          {
+            "word": "thí sinh",
+            "weight": 0.0892
+          },
+          {
+            "word": "bình nhưỡng",
+            "weight": 0.0856
+          }
+        ],
+        [
+          {
+            "word": "cháy",
+            "weight": 0.3209
+          },
+          {
+            "word": "lửa",
+            "weight": 0.241
+          },
+          {
+            "word": "dập",
+            "weight": 0.156
+          },
+          {
+            "word": "đám",
+            "weight": 0.1487
+          },
+          {
+            "word": "triều tiên",
+            "weight": 0.1334
+          },
+          {
+            "word": "chữa cháy",
+            "weight": 0.1277
+          },
+          {
+            "word": "bốc",
+            "weight": 0.1237
+          },
+          {
+            "word": "ngọn",
+            "weight": 0.1188
+          },
+          {
+            "word": "rụi",
+            "weight": 0.1174
+          },
+          {
+            "word": "trường",
+            "weight": 0.1091
+          }
+        ],
+        [
+          {
+            "word": "triều tiên",
+            "weight": 0.2716
+          },
+          {
+            "word": "tên lửa",
+            "weight": 0.1547
+          },
+          {
+            "word": "bình nhưỡng",
+            "weight": 0.1491
+          },
+          {
+            "word": "hàn quốc",
+            "weight": 0.1296
+          },
+          {
+            "word": "dự án",
+            "weight": 0.1132
+          },
+          {
+            "word": "hạt nhân",
+            "weight": 0.1093
+          },
+          {
+            "word": "thử",
+            "weight": 0.1036
+          },
+          {
+            "word": "phóng",
+            "weight": 0.0971
+          },
+          {
+            "word": "ubnd",
+            "weight": 0.0951
+          },
+          {
+            "word": "un",
+            "weight": 0.092
+          }
+        ],
+        [
+          {
+            "word": "cháy",
+            "weight": 0.2268
+          },
+          {
+            "word": "máy bay",
+            "weight": 0.1707
+          },
+          {
+            "word": "lửa",
+            "weight": 0.166
+          },
+          {
+            "word": "bay",
+            "weight": 0.1462
+          },
+          {
+            "word": "cảnh sát",
+            "weight": 0.1213
+          },
+          {
+            "word": "hàng không",
+            "weight": 0.1082
+          },
+          {
+            "word": "sân bay",
+            "weight": 0.1068
+          },
+          {
+            "word": "dập",
+            "weight": 0.1053
+          },
+          {
+            "word": "đám",
+            "weight": 0.1045
+          },
+          {
+            "word": "hành khách",
+            "weight": 0.0927
+          }
+        ],
+        [
+          {
+            "word": "việt nam",
+            "weight": 0.1869
+          },
+          {
+            "word": "phát triển",
+            "weight": 0.1245
+          },
+          {
+            "word": "công an",
+            "weight": 0.1232
+          },
+          {
+            "word": "hợp tác",
+            "weight": 0.0974
+          },
+          {
+            "word": "thủ tướng",
+            "weight": 0.0963
+          },
+          {
+            "word": "hiện trường",
+            "weight": 0.0884
+          },
+          {
+            "word": "kinh tế",
+            "weight": 0.08
+          },
+          {
+            "word": "syria",
+            "weight": 0.0703
+          },
+          {
+            "word": "đối tượng",
+            "weight": 0.0693
+          },
+          {
+            "word": "nguyễn xuân phúc",
+            "weight": 0.0665
+          }
+        ],
+        [
+          {
+            "word": "trung quốc",
+            "weight": 0.1857
+          },
+          {
+            "word": "quận",
+            "weight": 0.12
+          },
+          {
+            "word": "đường",
+            "weight": 0.1069
+          },
+          {
+            "word": "tuyến",
+            "weight": 0.1054
+          },
+          {
+            "word": "biển đông",
+            "weight": 0.105
+          },
+          {
+            "word": "cảnh sát",
+            "weight": 0.095
+          },
+          {
+            "word": "xe",
+            "weight": 0.0921
+          },
+          {
+            "word": "khu vực",
+            "weight": 0.0904
+          },
+          {
+            "word": "bắc kinh",
+            "weight": 0.0876
+          },
+          {
+            "word": "đối tượng",
+            "weight": 0.0839
+          }
+        ],
+        [
+          {
+            "word": "triều tiên",
+            "weight": 0.1817
+          },
+          {
+            "word": "is",
+            "weight": 0.1308
+          },
+          {
+            "word": "cảnh sát",
+            "weight": 0.1303
+          },
+          {
+            "word": "sân bay",
+            "weight": 0.1254
+          },
+          {
+            "word": "hàn quốc",
+            "weight": 0.1246
+          },
+          {
+            "word": "chuyến",
+            "weight": 0.1106
+          },
+          {
+            "word": "việt nam",
+            "weight": 0.108
+          },
+          {
+            "word": "thành phố",
+            "weight": 0.1075
+          },
+          {
+            "word": "nghi phạm",
+            "weight": 0.1002
+          },
+          {
+            "word": "súng",
+            "weight": 0.0985
           }
         ]
       ]
@@ -167,128 +671,632 @@
       "topics": [
         [
           {
-            "word": "công an",
-            "weight": 0.9534
+            "word": "tàu",
+            "weight": 1.2602
           },
           {
-            "word": "xe",
-            "weight": 0.7997
+            "word": "biển",
+            "weight": 1.1658
           },
           {
-            "word": "huyện",
-            "weight": 0.7795
+            "word": "mưa",
+            "weight": 1.1224
           },
           {
-            "word": "hiện trường",
-            "weight": 0.7546
+            "word": "bão",
+            "weight": 0.9202
+          },
+          {
+            "word": "bờ",
+            "weight": 0.843
           },
           {
             "word": "xã",
-            "weight": 0.6816
+            "weight": 0.8342
           },
           {
-            "word": "tuổi",
-            "weight": 0.6783
+            "word": "huyện",
+            "weight": 0.8216
           },
           {
-            "word": "điều tra",
-            "weight": 0.6756
+            "word": "cá",
+            "weight": 0.8091
           },
           {
             "word": "tỉnh",
-            "weight": 0.6076
+            "weight": 0.797
           },
           {
-            "word": "nạn nhân",
-            "weight": 0.5824
-          },
-          {
-            "word": "xảy",
-            "weight": 0.5466
+            "word": "gió",
+            "weight": 0.7555
           }
         ],
         [
           {
             "word": "tổng thống",
-            "weight": 0.7288
-          },
-          {
-            "word": "nga",
-            "weight": 0.6053
-          },
-          {
-            "word": "triều tiên",
-            "weight": 0.5877
+            "weight": 1.251
           },
           {
             "word": "trump",
-            "weight": 0.5387
+            "weight": 1.1733
+          },
+          {
+            "word": "nga",
+            "weight": 0.5457
           },
           {
             "word": "mỹ",
-            "weight": 0.5343
+            "weight": 0.4788
           },
           {
-            "word": "trung quốc",
-            "weight": 0.5198
+            "word": "nhà trắng",
+            "weight": 0.4654
           },
+          {
+            "word": "mỹ donald trump",
+            "weight": 0.4298
+          },
+          {
+            "word": "donald trump",
+            "weight": 0.4096
+          },
+          {
+            "word": "cựu",
+            "weight": 0.3806
+          },
+          {
+            "word": "bầu cử",
+            "weight": 0.3592
+          },
+          {
+            "word": "tổng thống mỹ",
+            "weight": 0.3371
+          }
+        ],
+        [
+          {
+            "word": "giá",
+            "weight": 0.7295
+          },
+          {
+            "word": "tăng",
+            "weight": 0.6576
+          },
+          {
+            "word": "mức",
+            "weight": 0.6332
+          },
+          {
+            "word": "thị trường",
+            "weight": 0.5685
+          },
+          {
+            "word": "ngân hàng",
+            "weight": 0.5604
+          },
+          {
+            "word": "mua",
+            "weight": 0.5547
+          },
+          {
+            "word": "bán",
+            "weight": 0.548
+          },
+          {
+            "word": "công ty",
+            "weight": 0.5202
+          },
+          {
+            "word": "usd",
+            "weight": 0.5028
+          },
+          {
+            "word": "giao dịch",
+            "weight": 0.4579
+          }
+        ],
+        [
+          {
+            "word": "cô",
+            "weight": 0.6778
+          },
+          {
+            "word": "chia sẻ",
+            "weight": 0.4101
+          },
+          {
+            "word": "trẻ",
+            "weight": 0.3793
+          },
+          {
+            "word": "gia đình",
+            "weight": 0.3685
+          },
+          {
+            "word": "tuổi",
+            "weight": 0.3628
+          },
+          {
+            "word": "mẹ",
+            "weight": 0.3369
+          },
+          {
+            "word": "bé",
+            "weight": 0.3275
+          },
+          {
+            "word": "sống",
+            "weight": 0.3159
+          },
+          {
+            "word": "nhà",
+            "weight": 0.309
+          },
+          {
+            "word": "khán giả",
+            "weight": 0.3072
+          }
+        ],
+        [
+          {
+            "word": "công an",
+            "weight": 1.179
+          },
+          {
+            "word": "điều tra",
+            "weight": 0.8
+          },
+          {
+            "word": "huyện",
+            "weight": 0.6616
+          },
+          {
+            "word": "đối tượng",
+            "weight": 0.6227
+          },
+          {
+            "word": "xã",
+            "weight": 0.5828
+          },
+          {
+            "word": "tỉnh",
+            "weight": 0.5486
+          },
+          {
+            "word": "cơ quan",
+            "weight": 0.5241
+          },
+          {
+            "word": "án",
+            "weight": 0.509
+          },
+          {
+            "word": "tuổi",
+            "weight": 0.4973
+          },
+          {
+            "word": "vụ việc",
+            "weight": 0.4847
+          }
+        ],
+        [
           {
             "word": "syria",
-            "weight": 0.4142
+            "weight": 1.2358
           },
           {
-            "word": "tuyên bố",
-            "weight": 0.4115
+            "word": "is",
+            "weight": 0.7474
           },
+          {
+            "word": "tấn công",
+            "weight": 0.7332
+          },
+          {
+            "word": "quân đội",
+            "weight": 0.5925
+          },
+          {
+            "word": "khủng bố",
+            "weight": 0.5739
+          },
+          {
+            "word": "lực lượng",
+            "weight": 0.4926
+          },
+          {
+            "word": "phiến",
+            "weight": 0.4686
+          },
+          {
+            "word": "quân",
+            "weight": 0.4608
+          },
+          {
+            "word": "hồi giáo",
+            "weight": 0.4377
+          },
+          {
+            "word": "nhóm",
+            "weight": 0.4114
+          }
+        ],
+        [
+          {
+            "word": "trường",
+            "weight": 1.4701
+          },
+          {
+            "word": "học sinh",
+            "weight": 1.0657
+          },
+          {
+            "word": "thi",
+            "weight": 1.0314
+          },
+          {
+            "word": "thí sinh",
+            "weight": 0.8436
+          },
+          {
+            "word": "thpt",
+            "weight": 0.8222
+          },
+          {
+            "word": "học",
+            "weight": 0.7066
+          },
+          {
+            "word": "gd",
+            "weight": 0.703
+          },
+          {
+            "word": "đt",
+            "weight": 0.6918
+          },
+          {
+            "word": "lớp",
+            "weight": 0.6896
+          },
+          {
+            "word": "điểm",
+            "weight": 0.6393
+          }
+        ],
+        [
+          {
+            "word": "xe",
+            "weight": 1.0572
+          },
+          {
+            "word": "tai nạn",
+            "weight": 0.9498
+          },
+          {
+            "word": "tài xế",
+            "weight": 0.6757
+          },
+          {
+            "word": "hiện trường",
+            "weight": 0.61
+          },
+          {
+            "word": "ôtô",
+            "weight": 0.602
+          },
+          {
+            "word": "đường",
+            "weight": 0.5441
+          },
+          {
+            "word": "chạy",
+            "weight": 0.5414
+          },
+          {
+            "word": "giao thông",
+            "weight": 0.5221
+          },
+          {
+            "word": "xe máy",
+            "weight": 0.4744
+          },
+          {
+            "word": "bị thương",
+            "weight": 0.4294
+          }
+        ],
+        [
           {
             "word": "tên lửa",
-            "weight": 0.401
+            "weight": 1.3824
           },
           {
-            "word": "hai",
-            "weight": 0.381
+            "word": "nga",
+            "weight": 1.0255
+          },
+          {
+            "word": "hệ thống",
+            "weight": 0.7654
+          },
+          {
+            "word": "bắn",
+            "weight": 0.6797
+          },
+          {
+            "word": "phóng",
+            "weight": 0.6718
+          },
+          {
+            "word": "vũ khí",
+            "weight": 0.6549
+          },
+          {
+            "word": "khả năng",
+            "weight": 0.6036
+          },
+          {
+            "word": "đạn",
+            "weight": 0.5657
+          },
+          {
+            "word": "tầm",
+            "weight": 0.5576
+          },
+          {
+            "word": "tiêm kích",
+            "weight": 0.5341
+          }
+        ],
+        [
+          {
+            "word": "cháy",
+            "weight": 1.6473
+          },
+          {
+            "word": "lửa",
+            "weight": 1.2342
+          },
+          {
+            "word": "dập",
+            "weight": 0.8021
+          },
+          {
+            "word": "đám",
+            "weight": 0.7784
+          },
+          {
+            "word": "bốc",
+            "weight": 0.6487
+          },
+          {
+            "word": "chữa cháy",
+            "weight": 0.6398
+          },
+          {
+            "word": "ngọn",
+            "weight": 0.6097
+          },
+          {
+            "word": "rụi",
+            "weight": 0.5953
+          },
+          {
+            "word": "hiện trường",
+            "weight": 0.5724
+          },
+          {
+            "word": "khói",
+            "weight": 0.5576
+          }
+        ],
+        [
+          {
+            "word": "trung quốc",
+            "weight": 1.4388
+          },
+          {
+            "word": "bắc kinh",
+            "weight": 0.659
+          },
+          {
+            "word": "biển đông",
+            "weight": 0.6348
+          },
+          {
+            "word": "việt nam",
+            "weight": 0.6009
+          },
+          {
+            "word": "ngoại giao",
+            "weight": 0.4714
+          },
+          {
+            "word": "quan hệ",
+            "weight": 0.4317
+          },
+          {
+            "word": "hợp tác",
+            "weight": 0.4305
+          },
+          {
+            "word": "quốc tế",
+            "weight": 0.409
+          },
+          {
+            "word": "thủ tướng",
+            "weight": 0.3527
+          },
+          {
+            "word": "chủ quyền",
+            "weight": 0.3495
+          }
+        ],
+        [
+          {
+            "word": "máy bay",
+            "weight": 1.0824
+          },
+          {
+            "word": "bay",
+            "weight": 0.9693
+          },
+          {
+            "word": "hàng không",
+            "weight": 0.7833
+          },
+          {
+            "word": "sân bay",
+            "weight": 0.7581
+          },
+          {
+            "word": "hành khách",
+            "weight": 0.6981
+          },
+          {
+            "word": "chuyến",
+            "weight": 0.6865
+          },
+          {
+            "word": "hãng",
+            "weight": 0.6537
+          },
+          {
+            "word": "phi công",
+            "weight": 0.3763
+          },
+          {
+            "word": "hạ cánh",
+            "weight": 0.3555
+          },
+          {
+            "word": "cất cánh",
+            "weight": 0.3011
           }
         ],
         [
           {
             "word": "dự án",
-            "weight": 0.4473
-          },
-          {
-            "word": "việt nam",
-            "weight": 0.4101
+            "weight": 0.9217
           },
           {
             "word": "xây dựng",
-            "weight": 0.3955
+            "weight": 0.6628
           },
           {
             "word": "đầu tư",
-            "weight": 0.3909
-          },
-          {
-            "word": "quy định",
-            "weight": 0.3795
+            "weight": 0.5777
           },
           {
             "word": "ubnd",
-            "weight": 0.3697
+            "weight": 0.4806
           },
           {
-            "word": "công ty",
-            "weight": 0.363
+            "word": "khu",
+            "weight": 0.4757
           },
           {
-            "word": "bộ",
-            "weight": 0.3568
+            "word": "công trình",
+            "weight": 0.4741
           },
           {
-            "word": "quản lý",
-            "weight": 0.3517
+            "word": "tuyến",
+            "weight": 0.4543
           },
           {
-            "word": "thực hiện",
-            "weight": 0.3515
+            "word": "đất",
+            "weight": 0.4295
+          },
+          {
+            "word": "giao thông",
+            "weight": 0.3956
+          },
+          {
+            "word": "quy hoạch",
+            "weight": 0.3782
+          }
+        ],
+        [
+          {
+            "word": "quy định",
+            "weight": 0.6063
+          },
+          {
+            "word": "phó",
+            "weight": 0.5348
+          },
+          {
+            "word": "vi phạm",
+            "weight": 0.476
+          },
+          {
+            "word": "chủ tịch",
+            "weight": 0.4494
+          },
+          {
+            "word": "cán bộ",
+            "weight": 0.4432
+          },
+          {
+            "word": "công tác",
+            "weight": 0.4282
+          },
+          {
+            "word": "xử lý",
+            "weight": 0.4097
+          },
+          {
+            "word": "ubnd",
+            "weight": 0.3752
+          },
+          {
+            "word": "kiểm tra",
+            "weight": 0.3668
+          },
+          {
+            "word": "uỷ ban",
+            "weight": 0.3601
+          }
+        ],
+        [
+          {
+            "word": "triều tiên",
+            "weight": 1.64
+          },
+          {
+            "word": "bình nhưỡng",
+            "weight": 0.8642
+          },
+          {
+            "word": "hàn quốc",
+            "weight": 0.8274
+          },
+          {
+            "word": "un",
+            "weight": 0.5606
+          },
+          {
+            "word": "hạt nhân",
+            "weight": 0.5226
+          },
+          {
+            "word": "thượng đỉnh",
+            "weight": 0.4123
+          },
+          {
+            "word": "kim jong",
+            "weight": 0.4038
+          },
+          {
+            "word": "bán đảo",
+            "weight": 0.3974
+          },
+          {
+            "word": "triều tiên kim jong",
+            "weight": 0.3767
+          },
+          {
+            "word": "thử",
+            "weight": 0.3647
           }
         ]
       ]
@@ -313,86 +1321,632 @@
       "topics": [
         [
           {
-            "word": "trung quốc",
-            "weight": 12042.2707
-          },
-          {
-            "word": "tổng thống",
-            "weight": 10135.4883
-          },
-          {
             "word": "nga",
-            "weight": 9627.4152
-          },
-          {
-            "word": "hai",
-            "weight": 8874.8586
-          },
-          {
-            "word": "triều tiên",
-            "weight": 7395.4925
-          },
-          {
-            "word": "có thể",
-            "weight": 7222.5004
-          },
-          {
-            "word": "mỹ",
-            "weight": 6848.3341
-          },
-          {
-            "word": "trump",
-            "weight": 6708.4926
-          },
-          {
-            "word": "đưa",
-            "weight": 5415.6556
+            "weight": 7940.9088
           },
           {
             "word": "syria",
-            "weight": 5409.4973
+            "weight": 5409.0667
+          },
+          {
+            "word": "tên lửa",
+            "weight": 3617.4855
+          },
+          {
+            "word": "tấn công",
+            "weight": 3363.7173
+          },
+          {
+            "word": "quân đội",
+            "weight": 2878.2043
+          },
+          {
+            "word": "lực lượng",
+            "weight": 2692.0693
+          },
+          {
+            "word": "iran",
+            "weight": 2179.1076
+          },
+          {
+            "word": "quân sự",
+            "weight": 1943.5219
+          },
+          {
+            "word": "israel",
+            "weight": 1880.0667
+          },
+          {
+            "word": "is",
+            "weight": 1747.0667
           }
         ],
         [
           {
-            "word": "tỉnh",
-            "weight": 13022.1915
-          },
-          {
-            "word": "xe",
-            "weight": 11336.1297
-          },
-          {
-            "word": "ảnh",
-            "weight": 11112.554
-          },
-          {
-            "word": "nhà",
-            "weight": 10821.3409
+            "word": "cô",
+            "weight": 4166.6072
           },
           {
             "word": "cùng",
-            "weight": 10247.169
+            "weight": 2660.498
           },
           {
-            "word": "công an",
-            "weight": 9650.486
+            "word": "việt nam",
+            "weight": 2438.1017
+          },
+          {
+            "word": "chia sẻ",
+            "weight": 2331.2843
+          },
+          {
+            "word": "trẻ",
+            "weight": 2180.9656
+          },
+          {
+            "word": "đây",
+            "weight": 1973.3528
+          },
+          {
+            "word": "phim",
+            "weight": 1866.9407
+          },
+          {
+            "word": "lần",
+            "weight": 1822.2223
+          },
+          {
+            "word": "từng",
+            "weight": 1798.7078
+          },
+          {
+            "word": "điều",
+            "weight": 1793.7397
+          }
+        ],
+        [
+          {
+            "word": "tàu",
+            "weight": 7090.4977
+          },
+          {
+            "word": "biển",
+            "weight": 4177.8725
+          },
+          {
+            "word": "mưa",
+            "weight": 1858.4312
+          },
+          {
+            "word": "khu vực",
+            "weight": 1703.3282
+          },
+          {
+            "word": "tỉnh",
+            "weight": 1700.1433
+          },
+          {
+            "word": "đảo",
+            "weight": 1668.6398
+          },
+          {
+            "word": "cá",
+            "weight": 1598.8405
+          },
+          {
+            "word": "bờ",
+            "weight": 1509.8951
+          },
+          {
+            "word": "vùng",
+            "weight": 1472.9184
+          },
+          {
+            "word": "khoảng",
+            "weight": 1322.2564
+          }
+        ],
+        [
+          {
+            "word": "máy bay",
+            "weight": 4044.4635
+          },
+          {
+            "word": "bay",
+            "weight": 3238.1837
+          },
+          {
+            "word": "có thể",
+            "weight": 2055.1335
+          },
+          {
+            "word": "sân bay",
+            "weight": 1991.6344
+          },
+          {
+            "word": "chuyến",
+            "weight": 1777.9525
+          },
+          {
+            "word": "hàng không",
+            "weight": 1742.8852
+          },
+          {
+            "word": "hãng",
+            "weight": 1685.5039
+          },
+          {
+            "word": "hệ thống",
+            "weight": 1643.6656
+          },
+          {
+            "word": "loại",
+            "weight": 1153.015
+          },
+          {
+            "word": "hành khách",
+            "weight": 1072.4293
+          }
+        ],
+        [
+          {
+            "word": "dự án",
+            "weight": 6755.8125
+          },
+          {
+            "word": "đất",
+            "weight": 5157.4144
+          },
+          {
+            "word": "xây dựng",
+            "weight": 4163.1614
+          },
+          {
+            "word": "ubnd",
+            "weight": 3698.2755
+          },
+          {
+            "word": "khu",
+            "weight": 3509.5124
+          },
+          {
+            "word": "nhà",
+            "weight": 3109.4076
+          },
+          {
+            "word": "người dân",
+            "weight": 2921.9192
+          },
+          {
+            "word": "tỉnh",
+            "weight": 2813.0576
           },
           {
             "word": "huyện",
-            "weight": 9496.4566
+            "weight": 2676.3656
+          },
+          {
+            "word": "công trình",
+            "weight": 2388.4212
+          }
+        ],
+        [
+          {
+            "word": "cảnh sát",
+            "weight": 2257.3474
+          },
+          {
+            "word": "malaysia",
+            "weight": 1296.6803
+          },
+          {
+            "word": "thái lan",
+            "weight": 1205.5755
+          },
+          {
+            "word": "philippines",
+            "weight": 1131.7876
+          },
+          {
+            "word": "cho biết",
+            "weight": 1079.6687
+          },
+          {
+            "word": "bắt",
+            "weight": 1073.2472
+          },
+          {
+            "word": "tòa",
+            "weight": 1066.1946
+          },
+          {
+            "word": "biểu tình",
+            "weight": 1035.0667
+          },
+          {
+            "word": "thành phố",
+            "weight": 1005.2217
+          },
+          {
+            "word": "việt nam",
+            "weight": 917.7526
+          }
+        ],
+        [
+          {
+            "word": "công an",
+            "weight": 9058.8089
+          },
+          {
+            "word": "huyện",
+            "weight": 5161.1001
+          },
+          {
+            "word": "tỉnh",
+            "weight": 4919.8612
+          },
+          {
+            "word": "điều tra",
+            "weight": 4794.1706
+          },
+          {
+            "word": "xã",
+            "weight": 3920.0892
+          },
+          {
+            "word": "cơ quan",
+            "weight": 3219.9025
+          },
+          {
+            "word": "đối tượng",
+            "weight": 3042.8699
+          },
+          {
+            "word": "tuổi",
+            "weight": 2694.4147
+          },
+          {
+            "word": "cùng",
+            "weight": 2668.8924
+          },
+          {
+            "word": "án",
+            "weight": 2492.8031
+          }
+        ],
+        [
+          {
+            "word": "trung quốc",
+            "weight": 10713.2113
+          },
+          {
+            "word": "triều tiên",
+            "weight": 7395.0667
           },
           {
             "word": "hai",
-            "weight": 8893.1414
+            "weight": 4137.8815
+          },
+          {
+            "word": "hàn quốc",
+            "weight": 3505.8502
+          },
+          {
+            "word": "tổng thống",
+            "weight": 2988.0694
+          },
+          {
+            "word": "mỹ",
+            "weight": 2817.5439
+          },
+          {
+            "word": "việt nam",
+            "weight": 2460.8464
+          },
+          {
+            "word": "quan hệ",
+            "weight": 2250.7798
+          },
+          {
+            "word": "gặp",
+            "weight": 2101.1379
+          },
+          {
+            "word": "bắc kinh",
+            "weight": 2037.3474
+          }
+        ],
+        [
+          {
+            "word": "tuổi",
+            "weight": 4033.0373
+          },
+          {
+            "word": "bé",
+            "weight": 3411.201
+          },
+          {
+            "word": "bệnh viện",
+            "weight": 2784.0924
+          },
+          {
+            "word": "gia đình",
+            "weight": 2724.345
+          },
+          {
+            "word": "hai",
+            "weight": 2648.1063
+          },
+          {
+            "word": "nhà",
+            "weight": 2639.5082
+          },
+          {
+            "word": "cháu",
+            "weight": 2370.3405
+          },
+          {
+            "word": "đưa",
+            "weight": 2065.3636
+          },
+          {
+            "word": "mẹ",
+            "weight": 1653.0747
+          },
+          {
+            "word": "cô",
+            "weight": 1615.4445
+          }
+        ],
+        [
+          {
+            "word": "trường",
+            "weight": 8168.2572
+          },
+          {
+            "word": "học sinh",
+            "weight": 4141.0667
+          },
+          {
+            "word": "thi",
+            "weight": 3785.8164
+          },
+          {
+            "word": "học",
+            "weight": 3044.9387
+          },
+          {
+            "word": "điểm",
+            "weight": 2818.0877
+          },
+          {
+            "word": "lớp",
+            "weight": 2254.8608
+          },
+          {
+            "word": "thí sinh",
+            "weight": 2131.9077
+          },
+          {
+            "word": "giáo dục",
+            "weight": 2099.1399
+          },
+          {
+            "word": "đại học",
+            "weight": 1986.6932
+          },
+          {
+            "word": "đh",
+            "weight": 1690.0667
+          }
+        ],
+        [
+          {
+            "word": "xe",
+            "weight": 11019.0401
           },
           {
             "word": "đường",
-            "weight": 8744.9824
+            "weight": 4887.8936
+          },
+          {
+            "word": "giao thông",
+            "weight": 4434.2734
+          },
+          {
+            "word": "cháy",
+            "weight": 3014.3927
+          },
+          {
+            "word": "tai nạn",
+            "weight": 2848.5047
+          },
+          {
+            "word": "ôtô",
+            "weight": 2313.8848
+          },
+          {
+            "word": "hiện trường",
+            "weight": 2279.2457
+          },
+          {
+            "word": "tài xế",
+            "weight": 2242.0667
+          },
+          {
+            "word": "chạy",
+            "weight": 2156.8532
+          },
+          {
+            "word": "tuyến",
+            "weight": 2044.9812
+          }
+        ],
+        [
+          {
+            "word": "công ty",
+            "weight": 5886.6292
+          },
+          {
+            "word": "giá",
+            "weight": 4826.4642
+          },
+          {
+            "word": "tăng",
+            "weight": 4785.0662
           },
           {
             "word": "tiền",
-            "weight": 8354.223
+            "weight": 4425.0293
+          },
+          {
+            "word": "mức",
+            "weight": 3912.7633
+          },
+          {
+            "word": "doanh nghiệp",
+            "weight": 3746.7165
+          },
+          {
+            "word": "ngân hàng",
+            "weight": 3573.2546
+          },
+          {
+            "word": "mua",
+            "weight": 3307.0388
+          },
+          {
+            "word": "usd",
+            "weight": 3159.1224
+          },
+          {
+            "word": "việt nam",
+            "weight": 3147.2035
+          }
+        ],
+        [
+          {
+            "word": "ảnh",
+            "weight": 3082.4674
+          },
+          {
+            "word": "nhà",
+            "weight": 2378.7764
+          },
+          {
+            "word": "cây",
+            "weight": 1938.0577
+          },
+          {
+            "word": "ăn",
+            "weight": 1461.3211
+          },
+          {
+            "word": "tết",
+            "weight": 1442.7957
+          },
+          {
+            "word": "gia đình",
+            "weight": 1412.805
+          },
+          {
+            "word": "hoa",
+            "weight": 1273.9066
+          },
+          {
+            "word": "người dân",
+            "weight": 1211.5004
+          },
+          {
+            "word": "bán",
+            "weight": 1178.672
+          },
+          {
+            "word": "đây",
+            "weight": 1138.9476
+          }
+        ],
+        [
+          {
+            "word": "tổng thống",
+            "weight": 6449.0821
+          },
+          {
+            "word": "trump",
+            "weight": 5371.1248
+          },
+          {
+            "word": "mỹ",
+            "weight": 1609.9125
+          },
+          {
+            "word": "cựu",
+            "weight": 1574.824
+          },
+          {
+            "word": "nhà trắng",
+            "weight": 1229.967
+          },
+          {
+            "word": "nga",
+            "weight": 1173.6106
+          },
+          {
+            "word": "đưa",
+            "weight": 1168.7304
+          },
+          {
+            "word": "bầu cử",
+            "weight": 1157.9926
+          },
+          {
+            "word": "đảng",
+            "weight": 1069.0877
+          },
+          {
+            "word": "ủng hộ",
+            "weight": 1046.8215
+          }
+        ],
+        [
+          {
+            "word": "quy định",
+            "weight": 4675.1816
+          },
+          {
+            "word": "bộ",
+            "weight": 4416.3241
+          },
+          {
+            "word": "phó",
+            "weight": 4173.1118
+          },
+          {
+            "word": "chủ tịch",
+            "weight": 3882.3229
+          },
+          {
+            "word": "thực hiện",
+            "weight": 3149.176
+          },
+          {
+            "word": "tổ chức",
+            "weight": 2978.1062
+          },
+          {
+            "word": "thủ tướng",
+            "weight": 2866.2554
+          },
+          {
+            "word": "vi phạm",
+            "weight": 2667.0641
+          },
+          {
+            "word": "việt nam",
+            "weight": 2583.7242
+          },
+          {
+            "word": "công tác",
+            "weight": 2528.5147
           }
         ]
       ]
